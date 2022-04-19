@@ -1,17 +1,25 @@
 import {Link} from 'react-router-dom';
+import styles from './Movie.module.css';
 
-function Movie({ id, coverImg, title, summary, genres }) {
+function Movie({ id, coverImg, title, summary, genres, year, rating }) {
     return (
-        <div>
-            <img alt={title} src={coverImg} />
-            <h2>
-                {/* <Link to="/movie">{title}</Link> */}
-                <Link to={`/movie/${id}`}>{title}</Link>
-            </h2>
-            <p>{summary}</p>
-            <ul>
-                {genres.map(g => <li key={g}>{g}</li>)}
-            </ul>
+        <div className={styles.card}>
+            <div className={styles.imgBox}>
+                <img className={styles.coverImg} alt={title} src={coverImg} />
+                <div className={styles.rating}><span className={styles.strong}>{rating}</span>/10</div>
+            </div>
+            <div className={styles.info}>
+                <div>
+                    {/* <Link to="/movie">{title}</Link> */}
+                    <Link to={`/movie/${id}`} className={styles.title}>{title}</Link>
+                    <p className={styles.year}>{year}</p>
+                </div>
+
+                <p className={styles.summary}>{summary.length > 235 ? `${summary.slice(0,235)}...` : summary}</p>
+                <ul className={styles.genres}>
+                    {genres.map(g => <li key={g}>{g}</li>)}
+                </ul>
+            </div>
         </div>
     );
 }

@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(217, 217, 217);
+
+}
+
+.cardContainer {
+    display: flex;
+    margin-top:200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 200px;
+    column-gap: 100px;
+}

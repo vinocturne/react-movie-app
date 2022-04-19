@@ -1,6 +1,7 @@
 import Home from './routes/Home';
 import Detail from './routes/Detail';
 
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,7 +12,8 @@ import {
 function App() {
   return (
     <>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
+      {/* <Router basename={process.env.PUBLIC_URL}> */}
         <Routes>
           <Route path="/movie/:id" element={<Detail/>}>
           </Route>
