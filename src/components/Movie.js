@@ -5,7 +5,7 @@ function Movie({ id, coverImg, title, summary, genres, year, rating }) {
     return (
         <div className={styles.card}>
             <div className={styles.imgBox}>
-                <img className={styles.coverImg} alt={title} src={coverImg} />
+                <Link to={`/movie/${id}`}><img className={styles.coverImg} alt={title} src={coverImg} /></Link>
                 <div className={styles.rating}><span className={styles.strong}>{rating}</span>/10</div>
             </div>
             <div className={styles.info}>

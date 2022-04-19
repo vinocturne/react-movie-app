@@ -22,9 +22,14 @@ function Detail() {
                 <div className={styles.detailCard}>
                     <img className={styles.coverImg} alt={detail.title} src={detail.medium_cover_image}/>
                     <div className={styles.info}>
-                        <h2>{detail.title} Detail</h2>
-                        <h4>description</h4>
-                        <p>{detail.description_full}</p>
+                        <h2 className={styles.title}>{detail.title} Detail</h2>
+                        <div>
+                            <h4 className={styles.descriptionTitle}>description</h4>
+                            <p className={styles.description}>{detail.description_full}</p>
+                        </div>
+                        <div>
+                            
+                        </div>
                     </div>
                 </div>
             }
