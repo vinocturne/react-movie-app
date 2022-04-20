@@ -41,5 +41,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://vinocturne.github.io/react-movie-app"
+  "homepage": "https://vinocturne.github.io/react-movie-app",
+  "proxy": "https://yts.mx/"
 }
