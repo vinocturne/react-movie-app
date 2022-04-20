@@ -29,11 +29,20 @@
 }
 .rating {
     position: relative;
-    left: 20px;
+    left: 80px;
     bottom: 50px;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    align-items: center;
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 14px;
+    background-color: black;
+    width:90px;
+    height: 90px;
+    border-radius: 100%;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .strong {
     font-weight:900;
